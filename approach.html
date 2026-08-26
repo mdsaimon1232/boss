@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Approach | The 6D AI &amp; Business Transformation Framework — Syed Islam</title>
+<meta name="description" content="A structured, repeatable methodology for moving from diagnosis to measurable business impact: Diagnose, Discover, Design, Develop, Deploy, Drive.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --bg-soft:#F6F7F8; --bg-deep:#EDF1F3;
+  --ink:#14171C; --ink-soft:#565D68; --ink-faint:#8B92A0;
+  --accent:#2E5A78; --accent-deep:#17303F; --accent-soft:#E6EEF2;
+  --line:#E1E4E8;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Public Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --maxw:1160px; --radius:2px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+h1,h2,h3,h4{font-family:var(--serif);color:var(--ink);line-height:1.16;letter-spacing:-0.01em;font-weight:400;}
+h1{font-size:clamp(2.1rem,2.6vw + 1.2rem,3.2rem);}
+h2{font-size:clamp(1.6rem,1.6vw + 1.1rem,2.15rem);}
+h3{font-size:clamp(1.15rem,1vw + 1rem,1.4rem);font-weight:500;}
+h4{font-size:1.02rem;font-weight:600;font-family:var(--sans);color:var(--ink);}
+p{color:var(--ink-soft);}
+.lede{font-size:1.18rem;line-height:1.65;color:var(--ink-soft);}
+.eyebrow{font-size:0.76rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);font-weight:600;display:inline-block;margin-bottom:18px;}
+.section{padding:100px 0;}
+.bg-soft{background:var(--bg-soft);}
+.center{text-align:center;}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;font-family:var(--sans);font-size:0.92rem;font-weight:600;border-radius:var(--radius);cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease;border:1px solid transparent;white-space:nowrap;}
+.btn-primary{background:var(--accent-deep);color:#fff;}
+.btn-primary:hover{background:var(--ink);}
+.btn-outline-light{border-color:rgba(255,255,255,.55);color:#fff;}
+.btn-outline-light:hover{background:#fff;color:var(--accent-deep);}
+.btn-sm{padding:10px 20px;font-size:0.83rem;}
+.btn-row{display:flex;gap:16px;flex-wrap:wrap;}
+header.site-header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;max-width:var(--maxw);margin:0 auto;}
+.brand{font-family:var(--serif);font-size:1.18rem;letter-spacing:.02em;}
+.brand small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.17em;color:var(--ink-faint);text-transform:uppercase;font-weight:600;margin-top:3px;}
+nav.main-nav{display:flex;gap:28px;align-items:center;}
+nav.main-nav a{font-size:.87rem;color:var(--ink-soft);font-weight:500;transition:color .2s;position:relative;}
+nav.main-nav a:hover{color:var(--accent-deep);}
+nav.main-nav a.active{color:var(--accent-deep);}
+nav.main-nav a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--accent);}
+.nav-right{display:flex;align-items:center;gap:20px;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.hamburger span{width:22px;height:2px;background:var(--ink);display:block;transition:.2s;}
+@media(max-width:960px){
+  nav.main-nav{position:fixed;top:73px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:24px 32px;gap:20px;border-bottom:1px solid var(--line);transform:translateY(-8px);opacity:0;pointer-events:none;transition:.2s;max-height:80vh;overflow-y:auto;}
+  nav.main-nav.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+  .hamburger{display:flex;}
+  .nav-right .btn{display:none;}
+}
+.page-header{padding:64px 0 20px;}
+.d-block{padding:44px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:110px 1fr 1.2fr;gap:36px;}
+.d-block:last-child{border-bottom:1px solid var(--line);}
+.d-num-wrap{display:flex;flex-direction:column;align-items:flex-start;gap:8px;}
+.d-num{width:58px;height:58px;border-radius:50%;border:1.5px solid var(--accent);color:var(--accent-deep);font-family:var(--serif);font-size:1.2rem;display:flex;align-items:center;justify-content:center;}
+.d-tick{width:1px;height:20px;background:var(--line);background-image:linear-gradient(var(--accent) 50%, transparent 0);background-size:1px 8px;}
+.d-title h3{margin-bottom:6px;}
+.d-title span{font-size:.78rem;color:var(--ink-faint);letter-spacing:.06em;text-transform:uppercase;}
+.d-desc p{font-size:.95rem;margin-bottom:14px;}
+.d-desc ul{display:flex;flex-wrap:wrap;gap:8px;}
+.d-desc ul li{font-size:.8rem;color:var(--ink-soft);border:1px solid var(--line);padding:6px 12px;border-radius:var(--radius);background:var(--bg-soft);}
+@media(max-width:900px){.d-block{grid-template-columns:1fr;gap:14px;}.d-num-wrap{flex-direction:row;}.d-tick{width:20px;height:1px;background-image:linear-gradient(90deg,var(--accent) 50%, transparent 0);background-size:8px 1px;}}
+.phases{display:flex;flex-direction:column;}
+.phase{display:grid;grid-template-columns:190px 1fr;gap:30px;padding:30px 0;border-top:1px dashed var(--line);}
+.phase:last-child{border-bottom:1px dashed var(--line);}
+.phase .ph-label{font-family:var(--serif);color:var(--accent);font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;}
+.phase h4{margin-bottom:8px;font-family:var(--serif);font-weight:500;font-size:1.15rem;}
+.phase p{font-size:.93rem;}
+@media(max-width:700px){.phase{grid-template-columns:1fr;gap:8px;}}
+.cta-band{padding:88px 0;background:var(--accent-deep);color:#fff;text-align:center;}
+.cta-band h2{color:#fff;}
+.cta-band p{color:#C7D6DE;max-width:560px;margin:16px auto 32px;}
+footer{background:var(--ink);color:#B8BEC8;padding:66px 0 28px;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:46px;border-bottom:1px solid rgba(255,255,255,.1);}
+footer h4{color:#fff;font-family:var(--sans);font-size:.83rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;}
+footer .brand{color:#fff;}
+footer .brand small{color:#7C8494;}
+footer p{color:#8891A0;font-size:.89rem;max-width:340px;margin-top:14px;}
+footer ul li{margin-bottom:11px;}
+footer ul li a{color:#B8BEC8;font-size:.89rem;transition:color .2s;}
+footer ul li a:hover{color:#fff;}
+.footer-bottom{display:flex;justify-content:space-between;padding-top:24px;font-size:.79rem;color:#6C7484;flex-wrap:wrap;gap:10px;}
+@media(prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;scroll-behavior:auto !important;}}
+@media(max-width:760px){.footer-top{grid-template-columns:1fr;gap:32px;}}
+@media(max-width:600px){.section{padding:60px 0;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">SYED ISLAM<small>Strategy · Transformation · AI</small></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="approach.html" class="active">Approach</a>
+      <a href="experience.html">Experience</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-primary btn-sm">Request a Discussion</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">Approach</span>
+    <h1>The 6D AI &amp; Business Transformation Framework</h1>
+    <p class="lede" style="margin-top:16px;max-width:700px;">A structured, repeatable methodology for moving from diagnosis to measurable business impact — in this order, every time.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:36px;">
+  <div class="container">
+
+    <div class="d-block">
+      <div class="d-num-wrap"><div class="d-num">01</div><div class="d-tick"></div></div>
+      <div class="d-title"><span>Stage One</span><h3>Diagnose</h3></div>
+      <div class="d-desc">
+        <p>Understand the organisation before proposing anything.</p>
+        <ul><li>Strategy</li><li>Business model</li><li>Operations</li><li>People</li><li>Processes</li><li>Technology</li><li>Data</li><li>Customer journey</li><li>Cost structure</li></ul>
+      </div>
+    </div>
+
+    <div class="d-block">
+      <div class="d-num-wrap"><div class="d-num">02</div><div class="d-tick"></div></div>
+      <div class="d-title"><span>Stage Two</span><h3>Discover</h3></div>
+      <div class="d-desc">
+        <p>Identify where transformation would actually make a difference.</p>
+        <ul><li>Operational inefficiencies</li><li>Technology gaps</li><li>Automation opportunities</li><li>AI opportunities</li><li>Growth opportunities</li><li>Decision-making bottlenecks</li></ul>
+      </div>
+    </div>
+
+    <div class="d-block">
+      <div class="d-num-wrap"><div class="d-num">03</div><div class="d-tick"></div></div>
+      <div class="d-title"><span>Stage Three</span><h3>Design</h3></div>
+      <div class="d-desc">
+        <p>Design the future state — deliberately, not by default.</p>
+        <ul><li>Target operating model</li><li>Technology direction</li><li>AI strategy</li><li>Workflow redesign</li><li>Human/AI responsibilities</li><li>Governance</li><li>Transformation priorities</li></ul>
+      </div>
+    </div>
+
+    <div class="d-block">
+      <div class="d-num-wrap"><div class="d-num">04</div><div class="d-tick"></div></div>
+      <div class="d-title"><span>Stage Four</span><h3>Develop</h3></div>
+      <div class="d-desc">
+        <p>Develop, or coordinate the development of, the required solutions. This is not a claim to write all the software personally — it is directing the right people and partners to build it correctly.</p>
+        <ul><li>AI systems</li><li>Automation</li><li>Workflows</li><li>Technology integrations</li><li>Dashboards</li><li>Digital infrastructure</li></ul>
+      </div>
+    </div>
+
+    <div class="d-block">
+      <div class="d-num-wrap"><div class="d-num">05</div><div class="d-tick"></div></div>
+      <div class="d-title"><span>Stage Five</span><h3>Deploy</h3></div>
+      <div class="d-desc">
+        <p>Support implementation — the stage where most transformation programmes actually fail.</p>
+        <ul><li>Implementation</li><li>Organisational adoption</li><li>Process changes</li><li>Training</li><li>Stakeholder management</li><li>Change management</li></ul>
+      </div>
+    </div>
+
+    <div class="d-block">
+      <div class="d-num-wrap"><div class="d-num">06</div></div>
+      <div class="d-title"><span>Stage Six</span><h3>Drive</h3></div>
+      <div class="d-desc">
+        <p>Measure business impact against the metrics that matter to leadership.</p>
+        <ul><li>Productivity</li><li>Cost</li><li>Revenue</li><li>Process time</li><li>Automation rate</li><li>Customer experience</li><li>Management visibility</li><li>Operational performance</li></ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="container">
+    <span class="eyebrow">Engagement Model</span>
+    <h2>How a Consulting Relationship Unfolds</h2>
+    <p class="lede" style="margin-top:12px;max-width:680px;">A high-value consulting journey — not a product funnel.</p>
+    <div class="phases" style="margin-top:44px;">
+      <div class="phase">
+        <span class="ph-label">Phase 1</span>
+        <div><h4>Executive Discovery</h4><p>Understand the organisation, leadership priorities and business challenges.</p></div>
+      </div>
+      <div class="phase">
+        <span class="ph-label">Phase 2</span>
+        <div><h4>Transformation Assessment</h4><p>Analyse strategy, operations, technology and AI opportunities.</p></div>
+      </div>
+      <div class="phase">
+        <span class="ph-label">Phase 3</span>
+        <div><h4>Executive Transformation Blueprint</h4><p>Deliver a current-state assessment, key challenges, an opportunity map, AI and technology priorities, transformation priorities, a 90-day action plan and a 12-month roadmap.</p></div>
+      </div>
+      <div class="phase">
+        <span class="ph-label">Phase 4</span>
+        <div><h4>Transformation Leadership</h4><p>Support implementation and execution.</p></div>
+      </div>
+      <div class="phase">
+        <span class="ph-label">Phase 5</span>
+        <div><h4>Executive Advisory</h4><p>Continue supporting senior leadership as a strategic adviser.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <span class="eyebrow" style="color:#9FC0D6;">Get In Touch</span>
+    <h2 style="font-size:clamp(1.8rem,2vw + 1.2rem,2.5rem);">Have a Transformation Challenge?</h2>
+    <p>If you are considering a major change in strategy, operations, technology or AI adoption, let's have a confidential conversation about the challenge.</p>
+    <div class="btn-row center" style="justify-content:center;">
+      <a href="contact.html" class="btn" style="background:#fff;color:var(--accent-deep);">Request a Confidential Discussion</a>
+      <a href="https://linkedin.com/in/syed-islam-mba-bsc" target="_blank" rel="noopener" class="btn btn-outline-light">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="brand">SYED ISLAM<small>Strategy · Transformation · AI</small></a>
+        <p>Senior Management Consultant advising CEOs and senior leadership teams on business transformation, technology and the strategic adoption of AI.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="approach.html">Approach</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="insights.html">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:syedislam@ascentraconsulting.co.uk">syedislam@ascentraconsulting.co.uk</a></li>
+          <li><a href="https://linkedin.com/in/syed-islam-mba-bsc" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Request a Confidential Discussion</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Syed Islam. All rights reserved.</span>
+      <span>United Kingdom</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var h=document.getElementById('hamburger'), n=document.getElementById('mainNav');
+  if(h){h.addEventListener('click',function(){var open=n.classList.toggle('open');h.classList.toggle('active');h.setAttribute('aria-expanded',open?'true':'false');});}
+</script>
+</body>
+</html>

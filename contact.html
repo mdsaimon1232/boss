@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Request a Confidential Discussion — Syed Islam</title>
+<meta name="description" content="If you are considering a major change in strategy, operations, technology or AI adoption, request a confidential discussion with Syed Islam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --bg-soft:#F6F7F8; --bg-deep:#EDF1F3;
+  --ink:#14171C; --ink-soft:#565D68; --ink-faint:#8B92A0;
+  --accent:#2E5A78; --accent-deep:#17303F; --accent-soft:#E6EEF2;
+  --line:#E1E4E8;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Public Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --maxw:1160px; --radius:2px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+h1,h2,h4{font-family:var(--serif);color:var(--ink);line-height:1.16;letter-spacing:-0.01em;font-weight:400;}
+h1{font-size:clamp(2rem,2.4vw + 1.2rem,3rem);}
+h4{font-size:1rem;font-weight:600;font-family:var(--sans);}
+p{color:var(--ink-soft);}
+.lede{font-size:1.15rem;line-height:1.65;color:var(--ink-soft);}
+.eyebrow{font-size:0.76rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);font-weight:600;display:inline-block;margin-bottom:18px;}
+.section{padding:80px 0 110px;}
+header.site-header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;max-width:var(--maxw);margin:0 auto;}
+.brand{font-family:var(--serif);font-size:1.18rem;letter-spacing:.02em;}
+.brand small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.17em;color:var(--ink-faint);text-transform:uppercase;font-weight:600;margin-top:3px;}
+nav.main-nav{display:flex;gap:28px;align-items:center;}
+nav.main-nav a{font-size:.87rem;color:var(--ink-soft);font-weight:500;transition:color .2s;position:relative;}
+nav.main-nav a:hover{color:var(--accent-deep);}
+nav.main-nav a.active{color:var(--accent-deep);}
+nav.main-nav a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--accent);}
+.nav-right{display:flex;align-items:center;gap:20px;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.hamburger span{width:22px;height:2px;background:var(--ink);display:block;transition:.2s;}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;font-family:var(--sans);font-size:0.92rem;font-weight:600;border-radius:var(--radius);cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease;border:1px solid transparent;white-space:nowrap;}
+.btn-primary{background:var(--accent-deep);color:#fff;}
+.btn-primary:hover{background:var(--ink);}
+.btn-sm{padding:10px 20px;font-size:0.83rem;}
+@media(max-width:960px){
+  nav.main-nav{position:fixed;top:73px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:24px 32px;gap:20px;border-bottom:1px solid var(--line);transform:translateY(-8px);opacity:0;pointer-events:none;transition:.2s;max-height:80vh;overflow-y:auto;}
+  nav.main-nav.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+  .hamburger{display:flex;}
+  .nav-right .btn{display:none;}
+}
+.page-header{padding:64px 0 30px;text-align:center;}
+.page-header .lede{max-width:640px;margin:16px auto 0;}
+.contact-wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:start;}
+.form-card{border:1px solid var(--line);padding:40px;background:var(--bg-soft);}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.form-field{margin-bottom:18px;}
+.form-field.full{grid-column:1/-1;}
+.form-field label{display:block;font-size:.8rem;font-weight:600;color:var(--ink);margin-bottom:7px;}
+.form-field input,.form-field textarea{width:100%;border:1px solid var(--line);padding:13px 15px;font-family:var(--sans);font-size:.94rem;border-radius:var(--radius);background:#fff;color:var(--ink);}
+.form-field input:focus,.form-field textarea:focus{outline:none;border-color:var(--accent);}
+.form-field textarea{resize:vertical;min-height:120px;}
+.form-note{font-size:.8rem;color:var(--ink-faint);margin-top:14px;}
+.direct-card{border-top:1px solid var(--line);padding-top:8px;}
+.direct-item{padding:20px 0;border-bottom:1px solid var(--line);}
+.direct-item h4{margin-bottom:6px;}
+.direct-item a,.direct-item span.val{font-size:.95rem;color:var(--accent-deep);font-weight:500;}
+.direct-item p{font-size:.85rem;margin-top:4px;}
+@media(max-width:900px){.contact-wrap{grid-template-columns:1fr;gap:40px;}.form-grid{grid-template-columns:1fr;}}
+footer{background:var(--ink);color:#B8BEC8;padding:66px 0 28px;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:46px;border-bottom:1px solid rgba(255,255,255,.1);}
+footer h4{color:#fff;font-family:var(--sans);font-size:.83rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;}
+footer .brand{color:#fff;}
+footer .brand small{color:#7C8494;}
+footer p{color:#8891A0;font-size:.89rem;max-width:340px;margin-top:14px;}
+footer ul li{margin-bottom:11px;}
+footer ul li a{color:#B8BEC8;font-size:.89rem;transition:color .2s;}
+footer ul li a:hover{color:#fff;}
+.footer-bottom{display:flex;justify-content:space-between;padding-top:24px;font-size:.79rem;color:#6C7484;flex-wrap:wrap;gap:10px;}
+@media(prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;scroll-behavior:auto !important;}}
+@media(max-width:760px){.footer-top{grid-template-columns:1fr;gap:32px;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">SYED ISLAM<small>Strategy · Transformation · AI</small></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="approach.html">Approach</a>
+      <a href="experience.html">Experience</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-primary btn-sm">Request a Discussion</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Have a Transformation Challenge?</h1>
+    <p class="lede">If you are considering a major change in strategy, operations, technology or AI adoption, let's have a confidential conversation about the challenge.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-wrap">
+    <div class="form-card">
+      <h4 style="font-family:var(--serif);font-size:1.2rem;margin-bottom:24px;">Request a Confidential Discussion</h4>
+      <form id="contact-form">
+        <div class="form-grid">
+          <div class="form-field"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
+          <div class="form-field"><label for="company">Company</label><input type="text" id="company" name="company"></div>
+          <div class="form-field full"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+          <div class="form-field full"><label for="message">What transformation challenge are you facing?</label><textarea id="message" name="message" required></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Request</button>
+        <p class="form-note">This opens a pre-filled email to syedislam@ascentraconsulting.co.uk — nothing is sent automatically.</p>
+      </form>
+    </div>
+    <div class="direct-card">
+      <h4 style="font-family:var(--serif);font-size:1.2rem;margin-bottom:10px;">Direct Contact</h4>
+      <p style="font-size:.9rem;margin-bottom:10px;">All enquiries are treated in confidence.</p>
+      <div class="direct-item">
+        <h4>Email</h4>
+        <a href="mailto:syedislam@ascentraconsulting.co.uk">syedislam@ascentraconsulting.co.uk</a>
+      </div>
+      <div class="direct-item">
+        <h4>LinkedIn</h4>
+        <a href="https://linkedin.com/in/syed-islam-mba-bsc" target="_blank" rel="noopener">linkedin.com/in/syed-islam-mba-bsc</a>
+      </div>
+      <div class="direct-item">
+        <h4>Location</h4>
+        <span class="val">United Kingdom</span>
+        <p>Available for remote and on-site engagements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="brand">SYED ISLAM<small>Strategy · Transformation · AI</small></a>
+        <p>Senior Management Consultant advising CEOs and senior leadership teams on business transformation, technology and the strategic adoption of AI.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="approach.html">Approach</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="insights.html">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:syedislam@ascentraconsulting.co.uk">syedislam@ascentraconsulting.co.uk</a></li>
+          <li><a href="https://linkedin.com/in/syed-islam-mba-bsc" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Request a Confidential Discussion</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Syed Islam. All rights reserved.</span>
+      <span>United Kingdom</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var h=document.getElementById('hamburger'), n=document.getElementById('mainNav');
+  if(h){h.addEventListener('click',function(){var open=n.classList.toggle('open');h.classList.toggle('active');h.setAttribute('aria-expanded',open?'true':'false');});}
+  var f=document.getElementById('contact-form');
+  if(f){f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('name').value;
+    var company=document.getElementById('company').value;
+    var email=document.getElementById('email').value;
+    var message=document.getElementById('message').value;
+    var subject=encodeURIComponent('Confidential Discussion Request — '+name);
+    var body=encodeURIComponent('Name: '+name+'\nCompany: '+company+'\nEmail: '+email+'\n\n'+message);
+    window.location.href='mailto:syedislam@ascentraconsulting.co.uk?subject='+subject+'&body='+body;
+  });}
+</script>
+</body>
+</html>
